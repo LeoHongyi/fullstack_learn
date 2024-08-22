@@ -1,0 +1,7 @@
+.container {
+    @apply tw-h-[100vh] tw-w-full tw-p-0 tw-m-0 tw-flex tw-flex-auto tw-items-center tw-justify-center;
+
+    & > .block {
+        @apply tw-shadow-md tw-p-5 tw-bg-black tw-text-center tw-text-white tw-text-lg;
+    }
+}

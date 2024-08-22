@@ -1,0 +1,82 @@
+.container {
+    @apply tw-flex tw-flex-auto tw-flex-col tw-mt-8 tw-items-center;
+}
+
+.container > div {
+    @apply tw-max-w-[90%] md:tw-max-w-[85%] xl:tw-max-w-[50%]  lg:tw-max-w-[65%] tw-flex-auto tw-mb-5;
+}
+
+.list {
+    & .item {
+        @apply tw-rounded-md tw-mb-8 tw-flex tw-flex-col
+        tw-duration-300 tw-backdrop-blur-md
+        tw-drop-shadow-[5px_5px_5px_rgba(0,0,0,0.35)];
+
+        &:last-child {
+            @apply tw-mb-0;
+        }
+
+        &:hover {
+            &::before {
+                @apply tw-opacity-100;
+            }
+
+            & > .content {
+                @apply tw-bg-white;
+            }
+        }
+
+        &::before {
+            content: '';
+
+            @apply tw-opacity-0 tw-rounded-md  tw-overflow-hidden tw-duration-300
+            tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-[image:var(--bg-img)]
+            tw-z-[-1] tw-bg-center tw-bg-cover;
+            filter: blur(30px) opacity(70%) brightness(120%);
+        }
+
+        & > .thumb {
+            @apply tw-relative tw-w-full tw-h-32 md:tw-h-40 lg:tw-h-64 tw-block;
+        }
+
+        & > .thumb img {
+            @apply tw-rounded-tl-md tw-rounded-tr-md tw-opacity-60;
+        }
+
+        & > .content {
+            @apply tw-w-full tw-bg-zinc-100/80 tw-rounded-bl-md tw-rounded-br-md tw-px-5;
+
+            & > .title {
+                @apply tw-py-3;
+            }
+
+            & > .title > a {
+                @apply tw-max-w-full tw-block tw-overflow-hidden;
+            }
+
+            & > .title > a > h2 {
+                @apply tw-text-lg tw-font-bold;
+            }
+
+            & > .summary {
+                @apply tw-py-3;
+            }
+
+            & > .footer {
+                @apply tw-py-3 tw-flex tw-justify-between;
+
+                & > .meta {
+                    @apply tw-flex tw-items-center;
+                }
+
+                & > .meta > time {
+                    @apply tw-ml-2;
+                }
+            }
+        }
+    }
+}
+
+.noData {
+    @apply tw-bg-white/80 tw-h-56 tw-w-full tw-drop-shadow-lg tw-rounded-md tw-flex tw-justify-center tw-items-center;
+}

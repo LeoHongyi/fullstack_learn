@@ -1,0 +1,7 @@
+.modalWrapper {
+    @apply tw-w-full tw-h-full tw-flex-auto;
+}
+
+.modalContent {
+    @apply tw-overflow-y-auto tw-max-h-[80vh] tw-w-full tw-px-3;
+}

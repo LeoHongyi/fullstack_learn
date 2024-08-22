@@ -1,0 +1,3 @@
+body {
+    @apply tw-bg-[url(images/bg.png)] tw-bg-fixed tw-bg-cover tw-bg-no-repeat tw-bg-center;
+}

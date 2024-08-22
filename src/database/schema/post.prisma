@@ -1,0 +1,12 @@
+model Post {
+  id        String   @id @default(uuid())
+  thumb     String
+  title     String
+  summary   String?
+  body      String
+  keywords  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("posts")
+}

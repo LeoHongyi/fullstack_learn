@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import './vars.css';
+@import './tailwind/base.css';
+@import 'tailwindcss/components';
+@import './tailwind/components.css';
+@import 'tailwindcss/utilities';
+@import './tailwind/utilities.css';
+@import './app.css';
+@import '@vavt/cm-extension/dist/previewTheme/arknights.css';
+
+/* 如果使用markdown编辑器渲染而不是mdx,请务必注释prisma的导入,以免样式冲突 */
+
+/* @import './prism.css'; */
+
+@config "../tailwind-config.ts";

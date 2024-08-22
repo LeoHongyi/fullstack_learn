@@ -1,0 +1,46 @@
+@layer base {
+    * {
+        @apply tw-border-border;
+    }
+
+    html,
+    body {
+        @apply tw-h-[100vh] tw-w-full tw-p-0 tw-m-0 tw-text-[var(--font-color-base)];
+    }
+
+    html {
+        font-family: var(--font-family-standard);
+    }
+
+    body {
+        font-size: var(--font-size-base);
+    }
+
+    a {
+        @apply tw-text-[var(--font-color-link)];
+    }
+
+    h1 {
+        @apply tw-text-3xl;
+    }
+
+    h2 {
+        @apply tw-text-2xl;
+    }
+
+    h3 {
+        @apply tw-text-xl;
+    }
+
+    h4 {
+        @apply tw-text-lg;
+    }
+
+    h5 {
+        @apply tw-text-sm;
+    }
+
+    h6 {
+        @apply tw-text-xs;
+    }
+}

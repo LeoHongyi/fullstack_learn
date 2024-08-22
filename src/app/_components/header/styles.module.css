@@ -1,0 +1,3 @@
+.header {
+    @apply tw-flex tw-justify-center tw-items-center tw-pt-6 tw-max-h-24 tw-flex-auto;
+}
